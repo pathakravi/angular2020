@@ -28,3 +28,21 @@ ng new my-first-app
 ng serve ( To run : runs on localhost:4200)
 (or ng seve --open) - To open in deafult browser automatically
 (or ng seve -o)
+
+6. IDE
+Webstorm (Paid)
+Visual Studio code (Free)
+
+7. package.json 
+dependencies - lists the thid party packages with versions to buid & run application correctly.
+devDependencies - only required for development.
+e2e - for end to end testing
+node_modules - where all dependencies gets installed.
+
+8. Fiest page to load is : index.html 
+and index.html load the app-root component.
+
+9. ngModel - Directives
+To make typescript understand Forms , we import it from FormsModule of @angular/forms and add in imports of of @Ngmodule decorator.
+
+
