@@ -4,6 +4,7 @@
 
 Angular Descriptions
 1. Angular - Anglar is a Javascrit framwork which allows us to create reactive Single Page applications(SPA).
+(Note: index.html is the single page that is served)
 Javascript changes the DOM by changing the HTML coede during runtime.
 URL to learn and grow together with like minded people : https://discord.gg/gxvEWGU
 
@@ -29,6 +30,10 @@ ng serve ( To run : runs on localhost:4200)
 (or ng seve --open) - To open in deafult browser automatically
 (or ng seve -o)
 
+5.1 To install bootstrap dependencies:
+npm i --save bootstrap@3 (downloads and store in node_modules folder)
+and let angular know about bootstrap : add path of bootstrap from node_modules in styles property of angular.json.
+
 6. IDE
 Webstorm (Paid)
 Visual Studio code (Free)
@@ -38,11 +43,15 @@ dependencies - lists the thid party packages with versions to buid & run applica
 devDependencies - only required for development.
 e2e - for end to end testing
 node_modules - where all dependencies gets installed.
+angular.json - it configures the cli project.
 
 8. Fiest page to load is : index.html 
 and index.html load the app-root component.
 
 9. ngModel - Directives
-To make typescript understand Forms , we import it from FormsModule of @angular/forms and add in imports of of @Ngmodule decorator.
+To make typescript understand Forms , we import it from FormsModule of @angular/forms and add in imports of @Ngmodule decorator.
+
+10. 
+
 
 
