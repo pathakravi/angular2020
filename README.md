@@ -84,7 +84,10 @@ https://angular.io/guide/ngmodule-api
 
 14. Note: AppModule is not a component class.
 
-15. 
+15. Create new component :
+ng generate component component-name
+ng g c component-name
+
 
 
 
