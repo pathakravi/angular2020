@@ -29,21 +29,23 @@ ng new my-first-app
 ng serve ( To run : runs on localhost:4200)
 (or ng seve --open) - To open in deafult browser automatically
 (or ng seve -o)
-What actually happens when we run ng serve ?
--ng serve rebuilds our project, it creates javascript bundles and automatically adds right imports in index.html.
--Javascript bundles created are :
+--What actually happens when we run ng serve ?
+1. First entry point of Angular app is main.ts is called.
+2. main.ts has bootstrap module as AppModule and AppModule refers to app.module.ts file.
+3. app.module.ts has bootstarp file named as AppComponent.
+4. ng serve rebuilds our project, it creates javascript bundles and automatically adds right imports in index.html.
+5. Javascript bundles created are :
   --inlne.bundle.js
   --polyfills.bundle.js
   --styles.bundle.js
   --vendor.bundle.js
   --main.bundle.js
--Therefore, above are the files which are executed first from main.ts.
--main.ts has bootstrap module as AppModule and AppModule refers to app.module.ts file.
--app.module.ts has bootstarp file named as AppComponent.
--Then Angular is able to handle app-root in index.html 
--index.html gets served in the browser.
--And this app-root happens to have html code which gets served in browser
--script tags gets injected automatically by cli in the body of index.html.
+5. Therefore, above are the files which are executed first from main.ts.
+6. On Serving project on localhost:4200, index.html gets parsed in browser.
+7. Scrit tag gets called and Angular is able to handle app-root in index.html.
+8. Index.html happens to have html code which finally gets parsed in browser.
+
+Note : Angular is a JS framework and changes DOM(html) at runtime.
 
 5.1 To install bootstrap dependencies:
 npm i --save bootstrap@3 (downloads and store in node_modules folder)
