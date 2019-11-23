@@ -17,7 +17,7 @@ Angular Major release in every 6 months.
 4. Prerequisites :
 NodeJS - https://nodejs.org/en/
 Why NodeJS, since its a server side scirpting language ?
-NodeJS are used by cli's bundle and optimize our project angular project and npm (Node package manager)helps to manage dependencies.
+NodeJS are used by cli's bundle and optimize our angular project and npm (Node package manager)helps to manage dependencies.
 
 5. Run Below commands on command prompt :
 npm install -g @angular/cli 
