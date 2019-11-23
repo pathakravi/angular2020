@@ -68,7 +68,23 @@ and index.html load the app-root component.
 9. ngModel - Directives
 To make typescript understand Forms , we import it from FormsModule of @angular/forms and add in imports of @Ngmodule decorator.
 
-10. 
+10. Component - is just a typescript class.
+server.component.ts - is not a simple class but a Component Class by @Component decorator.
+@Component() has a parameter as a Javascript object(also called as metadata) with some specfied properties.
+metadata : associates the template with component. 
+template + component = view
+
+11. Component - is a Decorator that marks the class as an Angular Component and provides configuration metadata that determines how component can be instantiated, processed and used at runtime.
+https://angular.io/api/core/component
+
+12. AppModule - Angular uses component to build web pages and uses modules to basically bundle those pieces.
+
+13. @NgModule - decorator are a way to organize angular app and accomplish it through metadata @NgModule decorator.
+https://angular.io/guide/ngmodule-api
+
+14. Note: AppModule is not a component class.
+
+15. 
 
 
 
