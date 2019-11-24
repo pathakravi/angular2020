@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   templateUrl : './servers.component.html'
 })
 
-export class ServersComponent {}
+export class ServersComponent {
+time: number = 20;
+  calculateTiime() {
+    return this.time = 10;
+  }
+}
