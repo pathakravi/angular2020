@@ -88,6 +88,16 @@ https://angular.io/guide/ngmodule-api
 ng generate component component-name
 ng g c component-name
 
+16. Data bindig is the communication between template and component.
+Data binding from component(ts code) to template (html):
+String Interpolation {{string}}
+Property Binding  [property]= "data"
+
+Data binding from tempate (html) to component(ts code) :
+Event Binding (event)="expression" 
+
+17. 
+
 
 
 
