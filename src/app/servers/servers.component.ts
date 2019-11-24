@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 @Component({
-  selector : 'app-servers',
+  selector: "app-servers",
   //selector : [app-servers],
   //selector : '.app-servers',
-  templateUrl : './servers.component.html'
+  templateUrl: "./servers.component.html"
 })
-
 export class ServersComponent {
-time: number = 20;
+  allowNewServer = false;
+  constrcutor() {
+    setTimeout(() => {
+      this.allowNewServer = false;
+    }, 5000);
+  }
+  time: number = 20;
   calculateTiime() {
-    return this.time = 10;
+    return (this.time = 10);
   }
 }
